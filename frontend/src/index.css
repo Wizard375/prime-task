@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f4a100;
+  --color-sidebar: #f8f5ef;
+  --color-background: #f5f6fa;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
