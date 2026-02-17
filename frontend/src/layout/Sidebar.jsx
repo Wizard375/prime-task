@@ -32,7 +32,7 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="w-64 min-h-screen bg-sidebar border-r relative">
+    <div className="w-64 min-h-screen bg-sidebar border-r border-gray-300 relative">
       <div className="p-6 font-bold text-lg">TASK MANAGER</div>
 
       <div className="px-4 space-y-2">

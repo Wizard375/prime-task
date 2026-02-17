@@ -32,7 +32,7 @@ export default function Tasks() {
         <div className="flex justify-between mb-4">
           <input
             placeholder="Search tasks..."
-            className="border px-3 py-2 rounded"
+            className="border border-gray-300 px-3 py-2 rounded"
             onChange={(e) => setSearch(e.target.value)}
           />
 
@@ -47,7 +47,7 @@ export default function Tasks() {
         <table className="w-full text-sm">
           <thead className="bg-gray-100">
             <tr>
-              <th className="p-3 text-left">Title</th>
+              <th className="p-3 text-center">Title</th>
               <th>Description</th>
               <th>Status</th>
               <th>Actions</th>
@@ -55,7 +55,10 @@ export default function Tasks() {
           </thead>
           <tbody>
             {filtered.map((task) => (
-              <tr key={task._id} className="border-t">
+              <tr
+                key={task._id}
+                className="border-t border-gray-300 text-center "
+              >
                 <td className="p-3">{task.title}</td>
                 <td>{task.description}</td>
                 <td>{task.status}</td>
